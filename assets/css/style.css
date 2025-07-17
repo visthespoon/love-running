@@ -55,6 +55,17 @@ h1 {
     border-bottom: 1px solid #3a3a3a;
 }
 
+/*  nav bar style with dropdown toggle */
+nav { 
+    position: absolute;
+    background-color: #ffffff;
+    padding: 0 1rem;
+    width: 100%; 
+    left: 0;
+    box-shadow: 0 2px 2px #3a3a3a;  
+    display: none; /* Hide by default */
+}
+
 /* Main Content */
 main {
 background-color: lightblue;
