@@ -94,7 +94,29 @@ main {
 
 /* Footer */
 footer {
-    background-color: orange
-   
-
+    background-color: orange;
 }
+
+/* media query : tablets and larger */
+@media screen and (min-width: 768px) {  
+
+    nav {
+        display: block; /* Show nav on larger screens */
+        position: relative; 
+        padding-right: 1rem; /* Add padding to the right */
+        width: fit-content; /* Adjust width to fit content */
+        box-shadow: none; /* Remove shadow on larger screens */
+    }
+
+    #menu {
+        display: flex; /* Use flexbox for horizontal layout */
+    }
+
+    #menu > li {
+        padding-left: 1rem; /* Add padding to the left of each menu item */
+    }
+
+    #nav-toggle-label {
+        display: none; /* Hide the toggle label on larger screens */
+    }   
+}    
