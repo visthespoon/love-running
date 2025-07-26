@@ -93,11 +93,11 @@ main {
 
 /* Hero section */
 #hero {
-    background-color: lightgreen
     height: 600px; 
     width: 100%;
-}
-/* Footer */
+    background: url("../images/hero-image.jpg") no-repeat center center/cover;
+
+    /* Footer */
 #social-networks {
     text-align: center;
     padding: 20px 0;
