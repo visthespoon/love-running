@@ -98,13 +98,6 @@ main {
     background: url("../images/hero-image.jpg") no-repeat center center/cover;
 }
 
-#circle-cover-bg {
-    height: 90vw; 
-    width: 90vw;
-    background: url("../images/benefits-runner-img.jpg") no-repeat center center/cover;
-    padding: 0 0 20px;
-}
-
 #cover-text {
     /* Final rgba value sets the opacity so it is semi-transparent */
     background-color: rgba(241, 109, 107, -7);
@@ -140,11 +133,28 @@ main {
     padding: 0 20px;
 }
 
-hr {
+#benefits hr {
     border-top: 1px solid #3a3a3a;
     margin: 5px 0;
 }
     
+#circle-cover-bg {
+    height: 90vw; 
+    width: 90vw;
+    background: url("../images/benefits-runner-img.jpg") no-repeat center center/cover;
+    margin-bottom: 20px;
+    /* makes the square image a circle */
+    border-radius: 50%;
+    max-width: 300px; /* Limit max width for larger screens */
+    max-height: 300px; /* Limit max height for larger screens */
+}
+
+#benefits-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
     /* Footer */
 #social-networks {
     text-align: center;
