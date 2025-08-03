@@ -98,6 +98,13 @@ main {
     background: url("../images/hero-image.jpg") no-repeat center center/cover;
 }
 
+#circle-cover-bg {
+    height: 90vw; 
+    width: 90vw;
+    background: url("../images/benefits-runner-img.jpg") no-repeat center center/cover;
+    padding: 0 0 20px;
+}
+
 #cover-text {
     /* Final rgba value sets the opacity so it is semi-transparent */
     background-color: rgba(241, 109, 107, -7);
