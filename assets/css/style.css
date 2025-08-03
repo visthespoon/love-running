@@ -203,11 +203,60 @@ main {
     main {
         margin-top: 79px; /* Push main content down to accomodate larger header */
     }
-}   
+
+    /* Hero section */
+    #cover-text {
+        width: 300px; /* Set a fixed width for larger screens */
+        right: 50px; /* Position it to the right */
+    }
+
+    /* Reasons section */
+    #benefits-physical, #benefits-mental {
+        display: flex; /* Use flexbox for horizontal layout */
+        flex-direction: column; /* Stack items vertically */
+        width: 100%; /* Full width */
+    }
+
+    #benefits-physical > div, #benefits-mental > div {
+        width: 75%; /* Set a fixed width for each benefit */
+    }
+    
+    #benefits-mental > div {
+       text-align: end; /* Align text to the end for mental benefits */
+       align-self: flex-end; /* Align the div to the end */
+    }
 
 /* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
     #menu a:hover{
         border-bottom: 1px solid #3a3a3a;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    /* Reasons section */
+    #benefits {
+        display: flex; /* Use flexbox for horizontal layout */
+        flex-direction: row; /* Stack items horizontally */
+    }
+
+    #benefits > div {
+        flex: 1; /* Each benefit takes equal space */
+    }
+
+    #benefits-image {
+        order: 0; /* Place the image first */
+    }
+
+    #benefits-mental {
+        order: 1; /* Place mental benefits second */
+    }
+
+    #benefits-mental > div {
+        align-self: flex-start; /* Align the div to the start */
+    }   
+
+    #benefits-physical > div {
+        align-self: flex-end; /* Align the div to the end */
     }
 }
