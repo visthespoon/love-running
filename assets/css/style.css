@@ -155,7 +155,30 @@ main {
     align-items: center;
 }
 
-    /* Footer */
+/* Meetup Times section */
+#times {
+    background: url('../images/dublin-city.jpg') no-repeat center/cover;
+    /* Handles responsivity without the need for a media query */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#times  div {
+    color: #fafafa;
+    background-color: rgba(0, 0, 0, .6); /* Semi-transparent background */
+    padding: 15px;
+    text-align: center;
+    /* This will not wrap on screens smaller than 600px */
+    flex-basis: 200px; /* Each div takes up 200px */ 
+    flex-grow: 1; /* Allow divs to grow to fill available space */
+} 
+
+#times h3 {
+    /* override the heading color set in general styles */
+    color: #fafafa; 
+}
+
+/* Footer */
 #social-networks {
     text-align: center;
     padding: 20px 0;
@@ -225,6 +248,7 @@ main {
        text-align: end; /* Align text to the end for mental benefits */
        align-self: flex-end; /* Align the div to the end */
     }
+}
 
 /* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
