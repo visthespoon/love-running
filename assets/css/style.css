@@ -246,7 +246,10 @@ main {
 
         /* Main content */
     main {
-        margin-top: 79px; /* Push main content down to accomodate larger header */
+        flex: 1 0 auto; /* Allow main to grow and fill available space */ 
+        margin-top: 47px; /* Push main content down to accomodate larger header */
+        display: flex; /* Use flexbox for layout */
+        flex-direction: column; /* Stack sections vertically */
     }
 
     /* Hero section */
